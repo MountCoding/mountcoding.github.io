@@ -10,7 +10,11 @@
 		<marquee direction="right">Huuiiiii</marquee>
 		<script>
 			function myFunction(){
-				alert("Hallo");
+				if(document.getElementsByTagName("marquee")[0].direction == "right"){
+					document.getElementsByTagName("marquee")[0].direction = "left";
+				}else{
+					document.getElementsByTagName("marquee")[0].direction = "right";
+				};
 			}
 		</script>
 	</body>
